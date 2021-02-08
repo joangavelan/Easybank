@@ -19,7 +19,7 @@ $breakpoints-down: (
 
 @mixin breakpoint-up($size) {
   @if map-has-key($breakpoints-up, $size) {
-    @media (min-width: map-get($breakpoints-up, $size)) {
+    @media only screen and (min-width: map-get($breakpoints-up, $size)) {
       @content;
     } 
   }
@@ -31,7 +31,7 @@ $breakpoints-down: (
 
 @mixin breakpoint-down($size) {
   @if map-has-key($breakpoints-down, $size) {
-    @media (max-width: map-get($breakpoints-down, $size)) {
+    @media only screen and (max-width: map-get($breakpoints-down, $size)) {
       @content;
     } 
   }

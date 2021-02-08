@@ -34,7 +34,7 @@ a, a:link, a:visited, a:hover {
 button, 
 .button {
   color: $white;
-  padding: 1.6rem 3rem;
+  padding: 1.4rem 3.5rem;
   font-weight: 400;
   background: linear-gradient(to right, $limeGreen, $brightCyan);
   border: 0;
@@ -45,9 +45,13 @@ button,
 
 //Visibility
 .hide-for-mobile {
-  //hide for tablet and mobile
+  @include breakpoint-down(medium) {
+    display: none;
+  }
 }
 
 .hide-for-desktop {
-  //hide for desktop viewport widths
+  @include breakpoint-up(large) {
+    display: none;
+  }
 }
