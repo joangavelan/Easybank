@@ -11,6 +11,8 @@
 </head>
 <body>
   <header class="header">
+    <!-- overlay -->
+    <div class="overlay"></div>
     <!-- nav -->
     <nav class="header__nav flex flex-jc-sb flex-ai-c">
       <!-- logo -->
@@ -18,11 +20,11 @@
         <img src="images/logo.svg" alt="Easybank">
       </a>
       <!-- menu -->
-      <a href="#" class="header__menu hide-for-desktop">
+      <button id="hamburger" class="header__menu hide-for-desktop">
         <span></span>
         <span></span>
         <span></span>
-      </a>
+      </button>
 
       <ul class="header__links hide-for-mobile">
         <li><a href="#">Home</a></li>
@@ -36,7 +38,7 @@
     </nav>
   </header>
 
-  <!-- 
+  <!-
   Home
   About
   Contact
